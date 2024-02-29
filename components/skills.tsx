@@ -5,7 +5,6 @@ import SectionHeading from "./section-heading";
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -49,7 +48,7 @@ export default function Skills() {
             }}
             custom={index}
           >
-            <Image src={skill.icon} alt={skill.name} className="text-5xl md:text-7xl" height="64" width="64" />
+            <img src={skill.icon} alt={skill.name} className="text-5xl md:text-7xl" height="64" width="64" />
             <span className="mt-2 text-pretty">{skill.name}</span>
           </motion.li>
         ))}

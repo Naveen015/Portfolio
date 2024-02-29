@@ -10,7 +10,6 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
-import Image from "next/image";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
@@ -46,7 +45,7 @@ export default function Experience() {
             >
               
               <div className='flex flex-row'> 
-                <Image src={item.company_icon} alt="Logo" style={{ height: 64, width: 64, marginRight: 10}} />
+                <img src={item.company_icon} alt="Logo" style={{ height: 64, width: 64, marginRight: 10}} />
                 <div>
                   <h3 className="font-semibold capitalize">{item.title}</h3>
                   <p className="font-normal !mt-0">{item.location}</p>
