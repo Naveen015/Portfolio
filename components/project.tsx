@@ -12,7 +12,7 @@ type ProjectProps = {
   description: string;
   tags: readonly string[];
   icons: readonly string[];
-  imageUrl?: string;
+  imageUrl?: StaticImageData;
   githubLink?: string;
   demoLink?: string;
   urlLink?: string;
@@ -96,9 +96,10 @@ export default function Project({
           </div>
         </div>
 
-        {imageUrl && (<img
+        {imageUrl && (<Image
           src={imageUrl}
           alt="Project I worked on"
+          quality={95}
           className="absolute hidden lg:block top-[60px] -right-0 w-[28.25rem] rounded-t-lg shadow-2xl scale-[1.0]
           transition 
           lg:scale-[1.05]

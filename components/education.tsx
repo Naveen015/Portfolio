@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import utdLogo from "@/public/utd-Logo.png";
 import iitmLogo from "@/public/iitm-Logo.png";
+import Image from "next/image";
 
 export default function Education() {
   const { ref } = useSectionInView("Education");
@@ -32,7 +33,7 @@ export default function Education() {
 
       <div className="mt-4 flex gap-6 border border-black/5 rounded-lg pt-4 pb-7 px-5 md:p-10 bg-gray-100 dark:bg-white/10 dark:hover:bg-white/20">
         <div>
-          <img src={utdLogo} alt="UTD" width="150" />
+          <Image src={utdLogo} alt="UTD" width="150" />
         </div>
 
         <div>
@@ -51,7 +52,7 @@ export default function Education() {
 
       <div className="mt-4 flex gap-6 border border-black/5 rounded-lg pt-4 pb-7 px-5 md:p-10 bg-gray-100 dark:bg-white/10 dark:hover:bg-white/20">
         <div>
-          <img src={iitmLogo} alt="IITM" width="150" />
+          <Image src={iitmLogo} alt="IITM" width="150" />
         </div>
 
         <div>
