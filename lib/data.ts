@@ -182,6 +182,33 @@ export const projectsData = [
       "logos:python",
       "lucide:brain-circuit"],
     githubLink: "https://github.com/Naveen015/Loan-Default-Prediction",
+  },
+  {
+    title: "DIC’s Terrace Farming Robot",
+    description: "Won Silver prize in DIC's Terrace Farming Robot for hilly areas challenge in Inter IIT Tech Meet among over 20+ teams. Designed an Autonomous agricultural robot that is capable of ploughing, seeding and harvesting by climbing up and down steps in hills. Programmed the bot with Arduino to follow the wall by a PID control system (Proportional-Integral-Derivative) using ultrasonic sensors",
+    tags: ["Python", "ROS", "IOT", "PID"],
+    icons: [
+      "logos:python"],
+  },
+  {
+    title: "Unmanned Ground Vehicle",
+    description: "Developed a program for UGV bot using ROS that transmits sensor & video feed to a remote system and tracked its path in the given map. Programmed the bot to create a 3D map of surrounding using kinect-360 and localize itself in the given map by Monte Carlo Localization",
+    tags: ["Python"],
+    icons: [
+      "logos:python"],
+    githubLink: "https://github.com/Naveen015/UGV",
+  },
+  {
+    title: "Water Levitation Project",
+    description: "Developed a program to control frequency of strobe lights and water pumps for levitating the water using the principle of Stroboscopic effect. Designed a PCB (Printed Circuit Board) using Eagle and fabricated the circuit along with Arduino to control pumps & lights to make patterns",
+    tags: ["Python", "Eagle"],
+    icons: ["logos:python"],
+  },
+  {
+    title: "Floor Cleaning Bot",
+    description: "Designed a model of remote controlled Semi-Automatic Bot using Arduino, Bluetooth module and qualified for Asia & Limca Book of Records",
+    tags: ["Arduino", "Python"],
+    icons: [],
   }
 ] as const;
 
