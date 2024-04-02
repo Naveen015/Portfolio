@@ -82,7 +82,7 @@ export default function Intro() {
       >
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-105 active:scale-105 transition cursor-pointer borderBlack text-gray-950"
-          href="https://naveen015.github.io/Naveen_Prashanna_Gurumurthy/Resume.pdf"
+          href="https://naveen015.github.io/Resume/Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
