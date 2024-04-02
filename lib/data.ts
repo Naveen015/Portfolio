@@ -58,6 +58,10 @@ export const links = [
     hash: "#skills",
   },
   {
+    name: "Achievements",
+    hash: "#achievements",
+  },
+  {
     name: "Education",
     hash: "#education",
   },
@@ -208,7 +212,6 @@ export const projectsData = [
     title: "Floor Cleaning Bot",
     description: "Designed a model of remote controlled Semi-Automatic Bot using Arduino, Bluetooth module and qualified for Asia & Limca Book of Records",
     tags: ["Arduino", "Python"],
-    icons: [],
   }
 ] as const;
 
@@ -321,6 +324,37 @@ export const skillsData =  [
     link: ""
   },
 ] as const;
+
+export const achievementsData = [
+  {
+    year: "2021",
+    description: "Awarded a Scholarship for Graduate Studies for receiving merit score in Graduate Aptitude Test in Engineering (GATE)"
+  },
+  {
+    year: "2019",
+    description: "Won Silver prize in DIC's Terrace Farming Robot for hilly areas challenge in Inter IIT Tech Meet among over 20+ teams"
+  },
+  {
+    year: "2017",
+    description: "Qualified for Asia and Limca Book of Records for most number of robots cleaning an area (A Clean India Initiative)"
+  },
+  {
+    year: "2017",
+    description: "Secured All India Rank 793 ( out of 200,000+ candidates ) in Joint Entrance Examination Advanced JEE-Adv"
+  },
+  {
+    year: "2016",
+    description: "Qualified among top 1% in India for Final Level National Mathematics Talent Contest in class XI and XII"
+  },
+  {
+    year: "2015",
+    description: "Awarded a Special Merit Certificate for Outstanding Performance in AISSE"
+  },
+  {
+    year: "2014",
+    description: "Qualified Junior Level National Mathematics Olympiad Contest in class IX"
+  }
+ ] as const;
 
 export const about = {
   name: 'Naveen Prashanna',
