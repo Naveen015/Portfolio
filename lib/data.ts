@@ -121,6 +121,39 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "LLM-Powered Mac Automation Tool",
+    description:
+      "Developed a LangChain system for LLM Mac control, replicating core functionalities of Anthropic's Computer Control. Implemented tools for text simulation, mouse automation, image analysis, application management & web navigation",
+    tags: ["Python", "Deep Learning", "LLM"],
+    icons: [
+      "logos:python",
+      "lucide:brain-circuit"
+    ],
+    githubLink: "https://github.com/Naveen015/Computer-Control-Prototype",
+  },
+  {
+    title: "Trajectory-Aware Human Feedback for Hierarchical RL",
+    description:
+      "Proposed a novel Hierarchical Reinforcement Learning framework to improve subgoal generation in complex tasks. Deployed the Deep-RL framework in the FetchReach environment, resulting in a 10% increase in task success rates",
+    tags: ["Python", "Deep Learning", "LLM"],
+    icons: [
+      "logos:python",
+      "lucide:brain-circuit"
+    ],
+    githubLink: "",
+  },
+  {
+    title: "Chatbot",
+    description:
+      "Built comprehensive knowledge base by web scraping & advanced NLP techniques enabling efficient data retrieval. Engineered an LSTM-based model with an attention mechanism, improving response relevance and context by 25%",
+    tags: ["Python", "Deep Learning", "LLM"],
+    icons: [
+      "logos:python",
+      "lucide:brain-circuit"
+    ],
+    githubLink: "",
+  },
+  {
     title: "Surface Texture Analysis",
     description:
       "Systemized an approach in identifying machined surface textures with CV & ML techniques, achieved 99.6% accuracy. Built Neural Network employing statistical features from GLCM for texture classification improving accuracy by 44%",
