@@ -26,7 +26,7 @@ export default function ChatSwitch() {
   const sendMessage = async () => {
     if (!input.trim()) return;
 
-    const userMessage = { sender: "user", text: input };
+    const userMessage: Message = { sender: "user", text: input };
     setMessages(prev => [...prev, userMessage]);
     setInput("");
 
@@ -42,7 +42,7 @@ export default function ChatSwitch() {
 
       const data = await res.json();
 
-      const botMessage = { sender: "bot", text: data.answer };
+      const botMessage: Message = { sender: "bot", text: data.answer };
       setMessages(prev => [...prev, botMessage]);
     } catch (error) {
       setMessages(prev => [...prev, { sender: "bot", text: "Error connecting to chat." }]);
