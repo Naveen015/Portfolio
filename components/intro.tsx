@@ -8,14 +8,12 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { FaGithub, FaFile} from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import { useTheme } from "@/context/theme-context";
 import ParticleContainer from "./particle-container";
 import naveen from "@/public/naveen.jpg";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
-  const { theme } = useTheme();
 
   return (
     <section
@@ -23,11 +21,7 @@ export default function Intro() {
       id="home"
       className="mb-16 sm:mb-0 text-center scroll-mt-[100rem] particles-section pt-28 pb-14 sm:pt-36 sm:pb-18 w-full px-4"
     >
-      <ParticleContainer 
-      contentStyle={{
-        background:
-          theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)"
-        }} />
+      <ParticleContainer />
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -83,7 +77,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Try out NaviBot, my custom AI assistant — click the chat icon to ask anything about me!
+        "Try out NaviBot, my custom AI assistant — click the chat icon to ask anything about me!
       </motion.h1>
 
       <motion.div
