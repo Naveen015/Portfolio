@@ -8,12 +8,14 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { FaGithub, FaFile} from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { useTheme } from "@/context/theme-context";
 import ParticleContainer from "./particle-container";
 import naveen from "@/public/naveen.jpg";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const { theme } = useTheme();
 
   return (
     <section
@@ -21,7 +23,11 @@ export default function Intro() {
       id="home"
       className="mb-16 sm:mb-0 text-center scroll-mt-[100rem] particles-section pt-28 pb-14 sm:pt-36 sm:pb-18 w-full px-4"
     >
-      <ParticleContainer />
+      <ParticleContainer 
+      contentStyle={{
+        background:
+          theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)"
+        }} />
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -70,6 +76,14 @@ export default function Intro() {
         building upon my strong educational foundation from the{" "}
         <a href="https://www.iitm.ac.in/" target="_blank" rel="noopener noreferrer" className="font-bold hover:underline underline-offset-2">Indian Institute of Technology Madras (IIT-M)</a>, 
         where I earned a Bachelor + Master of Technology degree in Mechanical Engineering with a Minor in Artificial Intelligence and Machine Learning.
+      </motion.h1>
+
+      <motion.h1
+        className="mb-10 mt-4 px-0 sm:px-4 text-xl font-small !leading-[1.5] sm:text-3xl text-white max-w-[60rem] mx-auto text-justify"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+      >
+        Try out NaviBot, my custom AI assistant — click the chat icon to ask anything about me!
       </motion.h1>
 
       <motion.div
