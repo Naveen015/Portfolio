@@ -2,7 +2,7 @@
 
 import { useState, useEffect  } from "react";
 import { IoChatbubbleOutline } from "react-icons/io5";
-import type { Message } from "@/lib/types.ts";
+import type { Message } from "@/lib/types";
 
 export default function ChatSwitch() {
   const [isOpen, setIsOpen] = useState(false);
