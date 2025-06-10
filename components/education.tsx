@@ -61,10 +61,10 @@ export default function Education() {
           </p>
           <p>Indian Institute of Technology Madras</p>
           <p className="mt-1">Graduated in July 2022</p>
-          <p className="my-1">GPA 3.24/4</p>
+          <p className="my-1">GPA 3.62/4</p>
           <ul className="list-disc pl-6">
             <li>Major in Mechanical Engineering</li>
-            <li>Minor in Artificial Intelligence / Machine Learning</li>
+            <li>Minor in Artificial Intelligence and Machine Learning</li>
           </ul>
         </div>
       </div>

@@ -6,6 +6,11 @@ import qbLogo from "@/public/quantitative_brokers_logo.ico"
 import bdsrLogo from "@/public/bdsr_logo.ico"
 import tvsLogo from "@/public/tvs_logo.ico"
 
+import NavibotImg from "@/public/Navibot.png"
+import BrainImg from "@/public/BrainScanNet.png"
+import HRLImg from "@/public/HRL.png"
+import encoderdecoderImg from "@/public/encoderdecoder.png"
+import SQLInjectionArchImg from "@/public/SQLInjectionArch.png"
 import DQNImg from "@/public/QLearningvsDQN.png"
 import GLCMImg from "@/public/Methodology_GLCM.jpeg"
 import CricketImg from "@/public/MCST.png"
@@ -121,15 +126,53 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Personal Assistant Bot",
+    description:
+      "Fine-tuned the Mistral LLM with QLora on a custom dataset to build a specialized and efficient personal assistant bot.  Integrated a Retrieval-Augmented Generation (RAG) pipeline to query personal documents, ensuring precise answers.",
+    tags: ["Python", "Deep Learning", "LLM", "RAG", "QLora"],
+    icons: [
+      "logos:python",
+      "lucide:brain-circuit"
+    ],
+    imageUrl: NavibotImg,
+    githubLink: "https://github.com/Naveen015/Personal-Assistant-Bot",
+  },
+  {
     title: "LLM-Powered Mac Automation Tool",
     description:
-      "Developed a LangChain system for LLM Mac control, replicating core functionalities of Anthropic's Computer Control. Implemented tools for text simulation, mouse automation, image analysis, application management & web navigation",
+      "Developed a LangChain system for LLM Mac control, replicating core functionalities of Anthropic's Computer Control. Implemented tools for text simulation, mouse automation, image analysis, application management & web navigation.",
     tags: ["Python", "Deep Learning", "LLM"],
     icons: [
       "logos:python",
       "lucide:brain-circuit"
     ],
     githubLink: "https://github.com/Naveen015/Computer-Control-Prototype",
+  },
+  {
+    title: "AI-Powered SQL Injection Detection System",
+    description:
+     "Developed a secure PHP-based web system with login, access control, and DistilBERT-powered SQL injection prevention. Achieved 99% detection accuracy using supervised fine-tuned LLMs; performed log analysis and penetration testing with SQLMap. Hardened the system using input sanitization, HTTPS setup, Apache WAF simulation, and prepared statements for robust security.",
+    tags: ["Python", "Deep Learning", "LLM", "SQL", "PHP", "Security"],
+    icons: [
+      "logos:python",
+      "logos:php",
+      "logos:sql",
+      "lucide:brain-circuit"
+    ],
+    imageUrl: SQLInjectionArchImg,
+    githubLink: "https://github.com/Naveen015/AI-Powered-SQL-Injection-Detection-System",
+  },
+  {
+    title: "BrainScanNet: MRI-Based Brain Tumor Detection with CNNs",
+    description:
+      "Built a CNN-based classification pipeline using VGG-16 and DenseNet to detect brain tumors from cropped MRI images. Preprocessed data via cropping and augmentation; VGG-16 model achieved highest accuracy among tested architectures.  Designed an assistive tool aimed at enhancing radiologist efficiency and diagnostic consistency in tumor identification.",
+    tags: ["Python", "Deep Learning", "CNN", ],
+    icons: [
+      "logos:python",
+      "lucide:brain-circuit"
+    ],
+    imageUrl: BrainImg,
+    githubLink: "https://github.com/Naveen015/BrainScanNet-MRI-Based-Brain-Tumor-Detection-with-CNNs",
   },
   {
     title: "Trajectory-Aware Human Feedback for Hierarchical RL",
@@ -140,7 +183,8 @@ export const projectsData = [
       "logos:python",
       "lucide:brain-circuit"
     ],
-    githubLink: "",
+    imageUrl: HRLImg, 
+    githubLink: "https://github.com/Naveen015/Trajectory-Aware-Human-Feedback-for-Hierarchical-RL",
   },
   {
     title: "Chatbot",
@@ -151,7 +195,8 @@ export const projectsData = [
       "logos:python",
       "lucide:brain-circuit"
     ],
-    githubLink: "",
+    imageUrl: encoderdecoderImg,
+    githubLink: "https://github.com/Naveen015/chatbot",
   },
   {
     title: "Surface Texture Analysis",
