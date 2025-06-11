@@ -4,7 +4,6 @@ import { Inter, Nunito } from "next/font/google";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
-import ChatSwitch from "@/components/chatbot_switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
 
@@ -34,7 +33,6 @@ export default function RootLayout({
             {children}
 
             <Toaster position="top-right" />
-            <ChatSwitch />
             <ThemeSwitch />
           </ActiveSectionContextProvider>
         </ThemeContextProvider>

@@ -131,4 +131,4 @@ const ParticleContainer: React.FC = () => {
   );
 };
 
-export default ParticleContainer;
+export default React.memo(ParticleContainer);

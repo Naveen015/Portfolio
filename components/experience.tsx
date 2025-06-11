@@ -19,44 +19,63 @@ export default function Experience() {
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>My experience</SectionHeading>
-      <VerticalTimeline lineColor="">
+
+      <VerticalTimeline lineColor={theme === "light" ? "#e5e7eb" : "#334155"}>
         {experiencesData.map((item, index) => (
-          <React.Fragment key={index}>
-            <VerticalTimelineElement
-              contentStyle={{
-                background:
-                  theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
-                boxShadow: "none",
-                border: "1px solid rgba(0, 0, 0, 0.05)",
-                textAlign: "left",
-                padding: "1.3rem 2rem",
-              }}
-              contentArrowStyle={{
-                borderRight:
-                  theme === "light"
-                    ? "0.4rem solid #9ca3af"
-                    : "0.4rem solid rgba(255, 255, 255, 0.5)",
-              }}
-              date={item.date}
-              icon={item.icon}
-              iconStyle={{
-                background: theme === "light" ? "white" : "#1d2432",
-                fontSize: "1.5rem",
-              }}
-            >
-              
-              <div className='flex flex-row'> 
-                <Image src={item.company_icon} alt="Logo" style={{ height: 64, width: 64, marginRight: 10}} />
-                <div>
-                  <h3 className="font-semibold capitalize">{item.title}</h3>
-                  <p className="font-normal !mt-0">{item.location}</p>
-                </div>
-              </div>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
-                {item.description1}<br/>{item.description2}
+          <VerticalTimelineElement
+            key={index}
+            contentStyle={{
+              background:
+                theme === "light" ? "#f9fafb" : "rgba(255, 255, 255, 0.05)",
+              boxShadow: "none",
+              border: theme === "light"
+                ? "1px solid rgba(0, 0, 0, 0.05)"
+                : "1px solid rgba(255, 255, 255, 0.1)",
+              padding: "1.5rem 2rem",
+              borderRadius: "0.75rem",
+              textAlign: "left",
+            }}
+            contentArrowStyle={{
+              borderRight:
+                theme === "light"
+                  ? "0.4rem solid #9ca3af"
+                  : "0.4rem solid rgba(255, 255, 255, 0.3)",
+            }}
+            date={item.date}
+            iconStyle={{
+              background: theme === "light" ? "#fff" : "#1f2937",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              border: theme === "light"
+                ? "1px solid #e5e7eb"
+                : "1px solid rgba(255, 255, 255, 0.1)",
+              boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
+              borderRadius: "0.5rem", // 👈 Makes it a square with rounded corners (or remove for hard square)
+            }}
+            icon={
+              <Image
+                src={item.company_icon}
+                alt="Logo"
+                width={40}
+                height={40}
+                className="rounded-md object-contain"
+              />
+            }
+          >
+            <div className="flex flex-col gap-1">
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                {item.title}
+              </h3>
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                {item.location}
               </p>
-            </VerticalTimelineElement>
-          </React.Fragment>
+            </div>
+
+            <p className="mt-3 text-sm leading-relaxed text-gray-700 dark:text-white/75">
+              {item.description1}<br />{item.description2}
+            </p>
+          </VerticalTimelineElement>
         ))}
       </VerticalTimeline>
     </section>
