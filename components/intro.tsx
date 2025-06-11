@@ -24,8 +24,19 @@ export default function Intro() {
   const [loading, setLoading] = useState(false);
   const [animatedText, setAnimatedText] = useState("");
 
-  const containerRef = useRef<HTMLDivElement | null>(null);
+  useEffect(() => {
+    // Background ping to wake up Render's server
+    fetch("https://naveen-chatbot-api.onrender.com/query", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ query: "Hi" }),
+    }).catch((err) => {
+      // silently ignore any error
+      console.warn("Chatbot ping failed (probably cold start)", err);
+    });
+  }, []);
 
+  const containerRef = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
   if (containerRef.current) {
       containerRef.current.scrollTop = containerRef.current.scrollHeight;
@@ -101,7 +112,7 @@ export default function Intro() {
               height="192"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-24 w-24 rounded-full object-cover border-[0.25rem] border-gray-700 dark:border-white shadow-xl"
             />
           </motion.div>
 
@@ -124,7 +135,7 @@ export default function Intro() {
       {!chatOpen && (
         <div className="flex flex-col items-center justify-center ">
         <motion.h1
-          className="mb-10 mt-4 px-0 sm:px-4 text-xl font-small !leading-[1.5] sm:text-3xl text-white max-w-[60rem] mx-auto text-justify"
+          className="mb-10 mt-4 px-0 sm:px-4 text-xl font-small !leading-[1.5] sm:text-3xl dark:text-white max-w-[60rem] mx-auto text-justify"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
