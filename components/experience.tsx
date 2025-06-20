@@ -72,9 +72,15 @@ export default function Experience() {
               </p>
             </div>
 
-            <p className="mt-3 text-sm leading-relaxed text-gray-700 dark:text-white/75">
-              {item.description1}<br />{item.description2}
-            </p>
+            <ul className="mt-3 text-sm leading-relaxed text-gray-700 dark:text-white/75 list-disc pl-5">
+              {item.descriptions.map((desc, descIndex) => (
+                <li key={descIndex} className="mb-1 last:mb-0">
+                  {/* Remove the leading "• " if your data consistently has it,
+                      otherwise, the list-disc will add one. */}
+                  {desc.startsWith("• ") ? desc.substring(2) : desc}
+                </li>
+              ))}
+            </ul>
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>
