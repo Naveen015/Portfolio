@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center">
       <Intro />
-      <div className="flex flex-col items-center px-4">
+      <div className="flex flex-col items-center px-4 w-full">
         <SectionDivider />
         <Experience />
         <Projects />

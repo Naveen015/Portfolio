@@ -17,7 +17,7 @@ export default function Experience() {
   const { theme } = useTheme();
 
   return (
-    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40 max-w-screen-xl mx-auto">
+    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40 w-full mx-auto">
       <SectionHeading>My experience</SectionHeading>
 
       <VerticalTimeline lineColor={theme === "light" ? "#e5e7eb" : "#334155"}>
