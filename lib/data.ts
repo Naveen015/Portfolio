@@ -36,12 +36,32 @@ import jenkinsLogo from "@/public/skills/jenkins.svg"
 import tensorflowLogo from "@/public/skills/tensorflow.svg"
 import pytorchLogo from "@/public/skills/pytorch.svg"
 import awsLogo from "@/public/skills/aws.svg"
-import braincircuitLogo from "@/public/skills/brain-circuit.svg"
 import linuxLogo from "@/public/skills/linux.svg"
-import dlLogo from "@/public/skills/deep-learning.png"
+import mlLogo from "@/public/skills/ml.png"
+import dlLogo from "@/public/skills/dl.png"
 import androidLogo from "@/public/skills/android.svg"
 import arduinoLogo from "@/public/skills/arduino.svg"
 import scikitlearnLogo from "@/public/skills/scikit-learn.svg"
+
+import kerasLogo from "@/public/skills/keras.svg";
+import vuejsLogo from "@/public/skills/vuejs.svg";
+import sqlLogo from "@/public/skills/sql.svg"; // Generic SQL icon
+import postgresqlLogo from "@/public/skills/postgresql.svg";
+import matlabLogo from "@/public/skills/matlab.svg";
+import rLogo from "@/public/skills/r.svg";
+import gcpLogo from "@/public/skills/gcp.svg";
+import azureLogo from "@/public/skills/azure.svg";
+import databricksLogo from "@/public/skills/databricks.svg";
+import langchainLogo from "@/public/skills/langchain.svg";
+import llmsLogo from "@/public/skills/llm.png"; // Consider a generic AI/ML icon if no specific LLM logo
+import hadoopLogo from "@/public/skills/hadoop.svg";
+import sparkLogo from "@/public/skills/spark.svg";
+import visualstudioLogo from "@/public/skills/visualstudio.svg"; // Often VS Code icon
+import snowflakeLogo from "@/public/skills/snowflake.svg";
+import powerbiLogo from "@/public/skills/powerbi.svg";
+import powerappsLogo from "@/public/skills/powerapps.svg";
+import awss3Logo from "@/public/skills/awss3.svg"; // Specific S3 icon if available
+import snowpipeLogo from "@/public/skills/snowpipe.png";
 
 
 
@@ -300,114 +320,65 @@ export const projectsData = [
   }
 ] as const;
 
-export const skillsData =  [
-  {
-    name: "HTML",
-    icon: htmLogo,
-    link: "www.example.com",
-  },
-  {
-    name: "CSS",
-    icon: cssLogo,
-    link: "www.example.com",
-  },
-  {
-    name: "React",
-    icon: reactLogo,
-    link: "https://reactjs.org/",
-  },
-  {
-    name: "TailwindCSS",
-    icon: tailwindLogo,
-    link: "https://tailwindcss.com/",
-  },
-  {
-    name: "Javascript",
-    icon: javascriptLogo,
-  },
-  {
-    name: "Typescript",
-    icon: typescriptLogo,
-    link: "https://www.typescriptlang.org/",
-  },
-  {
-    name: "Node.js",
-    icon: nodejsLogo,
-    link: "https://nodejs.org/",
-  },
-  {
-    name: "Jenkins",
-    icon: jenkinsLogo,
-    link: ""
-  },
-  {
-    name: "Python",
-    icon: pythonLogo,
-    link: "https://python.com/",
-  },
-  {
-    name: "C++",
-    icon: cppLogo,
-  },
+export const skillsData = [
+  // Languages & Frameworks
+  // { name: "", icon: , link: "" },
+  { name: "C++", icon: cppLogo, link: "" },
+  { name: "Python", icon: pythonLogo, link: "https://python.com/" },
+  { name: "Javascript", icon: javascriptLogo, link: "" },
+  { name: "Typescript", icon: typescriptLogo, link: "https://www.typescriptlang.org/" },
+  { name: "HTML", icon: htmLogo, link: "" },
+  { name: "CSS", icon: cssLogo, link: "" },
+  { name: "React", icon: reactLogo, link: "https://reactjs.org/" },
+  { name: "VueJS", icon: vuejsLogo, link: "https://vuejs.org/" },
+  { name: "Node.js", icon: nodejsLogo, link: "https://nodejs.org/" },
+  { name: "Tailwind", icon: tailwindLogo, link:""},
+  { name: "Java", icon: javaLogo, link: "" },
+  { name: "Matlab", icon: matlabLogo, link: "" },
+  // { name: "R", icon: rLogo, link: "https://www.r-project.org/" },
 
-  {
-    name: "Java",
-    icon: javaLogo,
-  },
-  {
-    name: "MySQL",
-    icon: mysqlLogo,
-    link: "https://www.mysql.com/",
-  },
-  {
-    name: "MongoDB",
-    icon: mongodbLogo,
-    link: "https://www.mongodb.com/",
-  },
-  {
-    name: "Git",
-    icon: gitLogo,
-    link: "https://git-scm.com/",
-  },
-  {
-    name: "Firebase",
-    icon: firebaseLogo,
-    link: "https://firebase.org/",
-  },
-  {
-    name: "Linux",
-    icon: linuxLogo,
-    link: ""
-  },
-  {
-    name: "Android",
-    icon: androidLogo,
-    link: ""
-  },
-  {
-  name: "Pytorch",
-  icon: pytorchLogo,
-  link: ""
-  },
-  {
-  name: "Tensorflow",
-  icon: tensorflowLogo,
-  link: ""
-  },
-  // {
-  //   name: "Artificial Intelligence",
-  //   icon: dlLogo,
-  //   link: ""
-  // },
-  {
-    name: "Scikit Learn",
-    icon: scikitlearnLogo
-  },
-  {
-    name: "Arduino",
-    icon: arduinoLogo,
-    link: ""
-  },
+  // Databases
+  { name: "SQL", icon: sqlLogo, link: "" },
+  { name: "PostgreSQL", icon: postgresqlLogo, link: "https://www.postgresql.org/" },
+  { name: "MySQL", icon: mysqlLogo, link: "https://www.mysql.com/" },
+  { name: "MongoDB", icon: mongodbLogo, link: "https://www.mongodb.com/" },
+
+  // Tools & Platforms
+  { name: "Jenkins", icon: jenkinsLogo, link: "" },
+  { name: "Visual Studio", icon: visualstudioLogo, link: "" },
+  { name: "Firebase", icon: firebaseLogo, link: "https://firebase.org/" },
+  { name: "Android", icon: androidLogo, link: "" },
+  { name: "Arduino", icon: arduinoLogo, link: "" },
+
+  // ML Frameworks & Libraries
+  { name: "Machine Learning", icon: mlLogo, link: ""},
+  { name: "Deep Learning", icon: dlLogo, link: ""},
+  { name: "LLMs", icon: llmsLogo, link: "" },
+  { name: "Pytorch", icon: pytorchLogo, link: "" },
+  { name: "Tensorflow", icon: tensorflowLogo, link: "" },
+  { name: "Keras", icon: kerasLogo, link: "https://keras.io/" },
+  { name: "Scikit Learn", icon: scikitlearnLogo, link: "" },
+  { name: "LangChain", icon: langchainLogo, link: "https://www.langchain.com/" },
+  
+
+  // Cloud & MLOps Tools
+  { name: "GCP", icon: gcpLogo, link: "https://cloud.google.com/" },
+  { name: "AWS", icon: awsLogo, link: "https://aws.amazon.com/" },
+  { name: "Azure", icon: azureLogo, link: "https://azure.microsoft.com/" },
+  { name: "DataBricks", icon: databricksLogo, link: "https://www.databricks.com/" },
+  { name: "Hadoop", icon: hadoopLogo, link: "https://hadoop.apache.org/" },
+  { name: "Spark", icon: sparkLogo, link: "https://spark.apache.org/" },
+  { name: "Snowflake", icon: snowflakeLogo, link: "https://www.snowflake.com/" },
+  { name: "Power BI", icon: powerbiLogo, link: "" },
+  { name: "Power Apps", icon: powerappsLogo, link: "" },
+  { name: "AWS S3", icon: awss3Logo, link: "" },
+  { name: "SnowPipe", icon: snowpipeLogo, link: "" },
+
+  // General Development Tools
+  { name: "Git", icon: gitLogo, link: "https://git-scm.com/" },
+  { name: "Visual Studio", icon: visualstudioLogo, link: "" },
+  { name: "Linux", icon: linuxLogo, link: "" },
+
 ] as const;
 
 export const achievementsData = [
