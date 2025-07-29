@@ -98,17 +98,17 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Web Developer",
+    title: "AI Engineer",
     location: "Kahana Inc Group",
     company_icon: kahanaLogo,
     descriptions: [
-      "Spearheaded the development of user-centric UI/UX features using React.js, significantly enhancing product usability",
-      "Integrated robust analytics tools & leveraged data insights to guide product upgrades, increasing user retention by 4%",
-      "Optimized front-end application performance, reducing page load times by 15% & improving overall user experience",
-      "Collaborated with cross-functional teams (product, backend) aiding cohesive feature delivery and strategic alignment",
+      "Developed NLP-based ML models to enhance contextual understanding of user browse and creative workflows",
+      "Analyzed complex, real-time clickstream and annotation data, to identify patterns for user engagement optimization",
+      "Iteratively refined core AI features like content summarization & recommendation engines, based on user feedback",
+      "Performed A/B tests for model enhancements, boosting key feature adoption by 12% and improving user retention",
     ],
     icon: React.createElement(CgWorkAlt),
-    date: "Oct 2023 - Jan 2024",
+    date: "Feb 2025 - Present",
   },
   {
     title: "Software Engineer",
