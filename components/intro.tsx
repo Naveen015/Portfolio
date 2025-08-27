@@ -279,7 +279,7 @@ export default function Intro() {
       >
         <a
           className="group bg-gray-950 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-105 active:scale-105 transition border-2 border-white border-opacity-40"
-          href="/Resume_SDE.pdf"
+          href="/NaveenPrashanna_Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
