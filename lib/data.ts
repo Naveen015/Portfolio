@@ -123,13 +123,12 @@ export const experiencesData = [
     date: "Jun 2021 - Jun 2023",
   },
   {
-    title: "Data Engineer Intern", 
+    title: "Machine Learning Engineer - Intern",
     location: "Big Data Science Research",
     company_icon: bdsrLogo, 
     descriptions: [ 
-      "Automated large-scale data mining and scraping, boosting processing efficacy by 25% for OpenStreetMap visualization",
-      "Devised proprietary map-matching algorithm to model accurately urban traffic flow, facilitating efficient city planning",
-      "Applied advanced data analysis to geospatial data, enhancing traffic model accuracy by 15% for predictive insights",
+      "Developed and deployed a machine learning pipeline using Python and scikit-learn to predict urban traffic patterns, enhancing model accuracy by 15% through the integration of geospatial data features.",
+      "Implemented a novel map-matching algorithm to refine GPS data, significantly improving the precision of traffic flow models and reducing prediction error by 20%.",
     ],
     icon: React.createElement(CgWorkAlt),
     date: "Apr 2020 - Jun 2020",
