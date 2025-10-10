@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export default function EducationPage() {
   return (
-    <main className="flex flex-col items-center px-4">
+    <main className="flex flex-col items-center px-4 pt-28 sm:pt-36">
       <motion.section
         className="mb-20 sm:mb-28 w-full max-w-3xl mx-auto"
         initial={{ opacity: 0 }}

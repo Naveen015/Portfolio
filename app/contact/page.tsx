@@ -18,14 +18,16 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Replace this with email handler (EmailJS, Formspree, or API endpoint)
+    // This is a placeholder for a real form submission.
+    // In a real application, you would integrate a service like EmailJS,
+    // Formspree, or a custom backend API endpoint to handle the form data.
     console.log("Form submitted:", formData);
-    alert("Message sent!");
+    alert("Message sent! (This is a placeholder)");
     setFormData({ name: "", email: "", message: "" });
   };
 
   return (
-    <main className="flex flex-col items-center px-4">
+    <main className="flex flex-col items-center px-4 pt-28 sm:pt-36">
       <motion.section
         className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
         initial={{ opacity: 0 }}
@@ -72,7 +74,7 @@ export default function ContactPage() {
           />
           <button
             type="submit"
-            className="mt-2 w-full bg-light-primary text-light-text py-2 px-4 rounded-md hover:bg-opacity-90 transition dark:bg-dark-primary dark:text-dark-background font-semibold"
+            className="mt-2 w-full bg-light-primary text-light-background py-2 px-4 rounded-md hover:bg-opacity-90 transition dark:bg-dark-primary dark:text-dark-background font-semibold"
           >
             Send Message
           </button>

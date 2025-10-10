@@ -15,7 +15,7 @@ export default function AchievementsPage() {
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   return (
-    <main className="flex flex-col items-center px-4">
+    <main className="flex flex-col items-center px-4 pt-28 sm:pt-36">
       <motion.section
         ref={element}
         style={{

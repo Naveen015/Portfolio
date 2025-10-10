@@ -26,7 +26,7 @@ const growOnHover = {
 
 export default function SkillsPage() {
   return (
-    <main className="flex flex-col items-center px-4">
+    <main className="flex flex-col items-center px-4 pt-28 sm:pt-36">
       <section
         className="mb-28 max-w-[58rem] text-center sm:mb-40"
       >

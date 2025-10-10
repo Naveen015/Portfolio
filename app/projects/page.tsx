@@ -8,7 +8,7 @@ import Project from "@/components/project";
 
 export default function ProjectsPage() {
   return (
-    <main className="flex flex-col items-center px-4">
+    <main className="flex flex-col items-center px-4 pt-28 sm:pt-36">
       <motion.section
         className="mb-20 sm:mb-28"
         initial={{

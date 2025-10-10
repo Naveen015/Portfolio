@@ -15,7 +15,7 @@ export default function ExperiencePage() {
   const { theme } = useTheme();
 
   return (
-    <main className="flex flex-col items-center px-4">
+    <main className="flex flex-col items-center px-4 pt-28 sm:pt-36">
       <section className="mb-28 sm:mb-40 w-full mx-auto">
         <SectionHeading>My experience</SectionHeading>
 
@@ -24,27 +24,24 @@ export default function ExperiencePage() {
             <VerticalTimelineElement
               key={index}
               contentStyle={{
-                background:
-                  theme === "light" ? "#F9F6EE" : "rgba(255, 255, 255, 0.05)",
+                background: theme === "light" ? "#f9f6ee" : "rgba(255, 255, 255, 0.05)",
                 boxShadow: "none",
-                border: "1px solid rgba(0, 0, 0, 0.05)",
+                border: `1px solid ${theme === 'light' ? '#A3B899' : 'rgba(52, 211, 153, 0.2)'}`,
                 padding: "1.5rem 2rem",
                 borderRadius: "0.75rem",
                 textAlign: "left",
               }}
               contentArrowStyle={{
-                borderRight:
-                  theme === "light"
-                    ? "0.4rem solid #A3B899"
-                    : "0.4rem solid #34D399",
+                borderRight: theme === "light" ? "0.4rem solid #A3B899" : "0.4rem solid #34D399",
               }}
               date={item.date}
+              dateClassName="text-light-text/70 dark:text-dark-text/70"
               iconStyle={{
-                background: theme === "light" ? "#F9F6EE" : "#1A202C",
+                background: theme === "light" ? "#f9f6ee" : "#1A202C",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                border: "1px solid rgba(0, 0, 0, 0.05)",
+                border: `1px solid ${theme === 'light' ? '#A3B899' : 'rgba(52, 211, 153, 0.2)'}`,
                 boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
                 borderRadius: "0.5rem",
               }}

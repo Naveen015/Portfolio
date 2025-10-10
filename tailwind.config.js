@@ -10,18 +10,14 @@ module.exports = {
       colors: {
         light: {
           background: "#F9F6EE", // cream
-          text: "#1A202C",
-          primary: "#A3B899", // sage green
+          text: "#1A202C",       // dark-gray
+          primary: "#A3B899",   // sage
         },
         dark: {
-          background: "#1A202C", // dark gray
-          text: "#F9F6EE",
-          primary: "#34D399", // vibrant green
+          background: "#1A202C", // dark-gray
+          text: "#F9F6EE",       // cream
+          primary: "#34D399",   // brand-green
         },
-        cream: "#F9F6EE",
-        sage: "#A3B899",
-        "dark-gray": "#1A202C",
-        "brand-green": "#34D399",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

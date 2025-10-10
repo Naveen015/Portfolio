@@ -3,20 +3,20 @@
 @tailwind utilities;
 
 body {
-  @apply bg-cream text-dark-gray;
+  @apply bg-light-background text-light-text;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 html.dark body {
-  @apply bg-dark-gray text-cream;
+  @apply bg-dark-background text-dark-text;
 }
 
 html {
-  --line-color: #A3B899; /* sage */
+  --line-color: theme('colors.light.primary');
 }
 
 html.dark {
-  --line-color: #34D399; /* brand-green */
+  --line-color: theme('colors.dark.primary');
 }
 
 .borderBlack {

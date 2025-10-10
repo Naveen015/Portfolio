@@ -65,7 +65,7 @@ export default function Project({
                   href={urlLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 bg-light-primary text-light-text py-2 px-4 rounded-full hover:scale-105 transition-transform dark:bg-dark-primary dark:text-dark-background font-semibold"
+                  className="flex items-center gap-2 bg-light-primary text-light-background py-2 px-4 rounded-full hover:scale-105 transition-transform dark:bg-dark-primary dark:text-dark-background font-semibold"
                 >
                   <BiLinkExternal /> Live
                 </a>
@@ -76,7 +76,7 @@ export default function Project({
                   href={demoLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 bg-light-primary text-light-text py-2 px-4 rounded-full hover:scale-105 transition-transform dark:bg-dark-primary dark:text-dark-background font-semibold"
+                  className="flex items-center gap-2 bg-light-primary text-light-background py-2 px-4 rounded-full hover:scale-105 transition-transform dark:bg-dark-primary dark:text-dark-background font-semibold"
                 >
                   <AiFillYoutube /> Demo
                 </a>

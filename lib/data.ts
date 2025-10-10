@@ -71,10 +71,6 @@ export const links = [
     hash: "/",
   },
   {
-    name: "About",
-    hash: "/about",
-  },
-  {
     name: "Experience",
     hash: "/experience",
   },
