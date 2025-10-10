@@ -22,11 +22,13 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${nunito.className} bg-light-background text-light-text relative dark:bg-dark-background dark:text-dark-text`}
+        className={`${nunito.className} bg-light-background text-light-text relative dark:bg-dark-background dark:text-dark-text flex flex-col min-h-screen`}
       >
         <ThemeContextProvider>
           <Header />
-          <PageTransition>{children}</PageTransition>
+          <div className="flex-grow">
+            <PageTransition>{children}</PageTransition>
+          </div>
           <Footer />
           <Toaster position="top-right" />
           <ThemeSwitch />
