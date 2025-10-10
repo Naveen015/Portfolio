@@ -43,7 +43,7 @@ export default function Project({
       style={{ scale: scaleProgess, opacity: opacityProgess }}
       className="group mb-8 last:mb-0"
     >
-      <section className="bg-light-background/70 max-w-[58rem] border border-light-primary/20 rounded-lg overflow-hidden sm:pr-8 relative dark:bg-dark-background/70 hover:bg-light-background/90 dark:hover:bg-dark-background/90 hover:shadow-lg transition-all duration-200">
+      <section className="bg-gradient-to-br from-light-background to-light-background/30 dark:from-dark-background dark:to-dark-background/30 max-w-[58rem] border-2 border-light-primary/60 dark:border-dark-primary/60 rounded-lg overflow-hidden sm:pr-8 relative hover:shadow-lg transition-all duration-200">
         <div className={`flex flex-col lg:flex-row ${imageUrl ? "lg:pr-10" : ""}`}>
           <div className={`px-6 py-8 ${imageUrl ? "lg:w-1/2" : "w-full"}`}>
             <h3 className="text-2xl font-semibold mb-4 text-light-text dark:text-dark-text">{title}</h3>
