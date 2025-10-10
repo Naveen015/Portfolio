@@ -2,7 +2,6 @@
 
 import React from "react";
 import SectionHeading from "@/components/section-heading";
-import { motion } from "framer-motion";
 import utdLogo from "@/public/utd-Logo.png";
 import iitmLogo from "@/public/iitm-Logo.png";
 import Image from "next/image";
