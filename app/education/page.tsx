@@ -2,6 +2,7 @@
 
 import React from "react";
 import SectionHeading from "@/components/section-heading";
+import { motion } from "framer-motion";
 import utdLogo from "@/public/utd-Logo.png";
 import iitmLogo from "@/public/iitm-Logo.png";
 import Image from "next/image";
@@ -9,8 +10,11 @@ import Image from "next/image";
 export default function EducationPage() {
   return (
     <main className="flex flex-col items-center px-4">
-      <section
+      <motion.section
         className="mb-20 sm:mb-28 w-full max-w-3xl mx-auto"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
       >
         <SectionHeading>My Education</SectionHeading>
 
