@@ -68,31 +68,35 @@ import snowpipeLogo from "@/public/skills/snowpipe.png";
 export const links = [
   {
     name: "Home",
-    hash: "#home",
+    hash: "/",
+  },
+  {
+    name: "About",
+    hash: "/about",
   },
   {
     name: "Experience",
-    hash: "#experience",
+    hash: "/experience",
   },
   {
     name: "Projects",
-    hash: "#projects",
+    hash: "/projects",
   },
   {
     name: "Skills",
-    hash: "#skills",
+    hash: "/skills",
   },
   {
     name: "Achievements",
-    hash: "#achievements",
+    hash: "/achievements",
   },
   {
     name: "Education",
-    hash: "#education",
+    hash: "/education",
   },
   {
     name: "Contact",
-    hash: "#contact",
+    hash: "/contact",
   },
 ] as const;
 

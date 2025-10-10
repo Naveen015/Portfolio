@@ -43,21 +43,21 @@ export default function Project({
       style={{ scale: scaleProgess, opacity: opacityProgess }}
       className="group mb-8 last:mb-0"
     >
-      <section className="bg-gray-100 max-w-[58rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative dark:text-white dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 hover:shadow-lg transition-all duration-200">
+      <section className="bg-light-background/70 max-w-[58rem] border border-light-primary/20 rounded-lg overflow-hidden sm:pr-8 relative dark:bg-dark-background/70 hover:bg-light-background/90 dark:hover:bg-dark-background/90 hover:shadow-lg transition-all duration-200">
         <div className={`flex flex-col lg:flex-row ${imageUrl ? "lg:pr-10" : ""}`}>
           <div className={`px-6 py-8 ${imageUrl ? "lg:w-1/2" : "w-full"}`}>
-            <h3 className="text-2xl font-semibold mb-4">{title}</h3>
+            <h3 className="text-2xl font-semibold mb-4 text-light-text dark:text-dark-text">{title}</h3>
 
             {iconsArray.length > 0 && (
               <div className="mb-4 flex flex-wrap items-center gap-2">
-                <span className="font-semibold text-gray-500 dark:text-white/70">Made with:</span>
+                <span className="font-semibold text-light-text/70 dark:text-dark-text/70">Made with:</span>
                 {iconsArray.map((icon, iconIndex) => (
-                  <Icon key={iconIndex} icon={icon} className="text-2xl opacity-90" />
+                  <Icon key={iconIndex} icon={icon} className="text-2xl opacity-90 text-light-text dark:text-dark-text" />
                 ))}
               </div>
             )}
 
-            <p className="leading-relaxed text-gray-700 dark:text-white/70 mb-6">{description}</p>
+            <p className="leading-relaxed text-light-text/80 dark:text-dark-text/80 mb-6">{description}</p>
 
             <div className="flex flex-wrap gap-3">
               {urlLink && (
@@ -65,7 +65,7 @@ export default function Project({
                   href={urlLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 bg-[#111827] text-white py-2 px-4 rounded-full hover:scale-105 transition-transform"
+                  className="flex items-center gap-2 bg-light-primary text-light-text py-2 px-4 rounded-full hover:scale-105 transition-transform dark:bg-dark-primary dark:text-dark-background font-semibold"
                 >
                   <BiLinkExternal /> Live
                 </a>
@@ -76,7 +76,7 @@ export default function Project({
                   href={demoLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 bg-[#111827] text-white py-2 px-4 rounded-full hover:scale-105 transition-transform"
+                  className="flex items-center gap-2 bg-light-primary text-light-text py-2 px-4 rounded-full hover:scale-105 transition-transform dark:bg-dark-primary dark:text-dark-background font-semibold"
                 >
                   <AiFillYoutube /> Demo
                 </a>
@@ -87,10 +87,10 @@ export default function Project({
                   href={githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 border border-[#111827] dark:border-white dark:text-white py-2 px-4 rounded-full hover:scale-105 transition-transform text-[#111827] dark:border-opacity-40"
+                  className="flex items-center gap-2 border border-light-primary dark:border-dark-primary text-light-text dark:text-dark-text py-2 px-4 rounded-full hover:scale-105 transition-transform font-semibold"
                 >
-                  <AiFillGithub className="opacity-70" />
-                  <span className="opacity-70">GitHub</span>
+                  <AiFillGithub />
+                  <span>GitHub</span>
                 </a>
               )}
             </div>

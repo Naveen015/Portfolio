@@ -2,16 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-cream text-dark-gray;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.dark body {
+  @apply bg-dark-gray text-cream;
+}
+
 html {
-  --line-color: #e5e7eb;
+  --line-color: #A3B899; /* sage */
 }
 
 html.dark {
-  --line-color: rgba(255, 255, 255, 0.2);
+  --line-color: #34D399; /* brand-green */
 }
 
 .borderBlack {
-  @apply border border-black/10;
+  @apply border border-black/10 dark:border-white/10;
 }
 
 .vertical-timeline {
