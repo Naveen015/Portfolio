@@ -5,16 +5,18 @@ import { motion } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
 import clsx from "clsx";
-import { useActiveSectionContext } from "@/context/active-section-context";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
-  const { activeSection, setActiveSection, setTimeOfLastClick } =
-    useActiveSectionContext();
+  const pathname = usePathname();
+  const normalizedPathname = pathname.length > 1 && pathname.endsWith('/')
+    ? pathname.slice(0, -1)
+    : pathname;
 
   return (
     <header className="z-[999] relative">
       <motion.div
-        className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-light-background bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full dark:bg-dark-background dark:border-black/40 dark:bg-opacity-75"
+        className="fixed top-0 left-1/2 -translate-x-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-light-background bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-auto sm:rounded-full dark:bg-dark-background dark:border-black/40 dark:bg-opacity-75"
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       ></motion.div>
@@ -33,18 +35,14 @@ export default function Header() {
                   "flex w-full items-center justify-center px-3 py-3 hover:text-light-text transition dark:hover:text-dark-text",
                   {
                     "text-light-text dark:text-dark-text":
-                      activeSection === link.name,
+                      normalizedPathname === link.hash,
                   }
                 )}
                 href={link.hash}
-                onClick={() => {
-                  setActiveSection(link.name);
-                  setTimeOfLastClick(Date.now());
-                }}
               >
                 {link.name}
 
-                {link.name === activeSection && (
+                {normalizedPathname === link.hash && (
                   <motion.span
                     className="bg-light-primary/20 rounded-full absolute inset-0 -z-10 dark:bg-dark-primary/20"
                     layoutId="activeSection"
