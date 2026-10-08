@@ -22,14 +22,14 @@ export default function Intro() {
   const [loading, setLoading] = useState(false);
   const [animatedText, setAnimatedText] = useState("");
   // Switchable inference model state: default is local LLM ("vllm")
-  const [provider, setProvider] = useState<"vllm" | "openai">("vllm");
+  const [provider, setProvider] = useState<"vllm" | "openai">("openai");
 
   useEffect(() => {
     // Background ping to wake up Render's server
     fetch("https://naveen-chatbot-api.onrender.com/query", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ query: "Hi", provider: "vllm" }),
+      body: JSON.stringify({ query: "Hi", provider: "openai" }),
     }).catch((err) => {
       console.warn("Chatbot ping failed (probably cold start)", err);
     });
