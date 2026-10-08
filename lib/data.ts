@@ -5,6 +5,7 @@ import kahanaLogo from "@/public/kahana_logo.ico"
 import qbLogo from "@/public/quantitative_brokers_logo.ico"
 import bdsrLogo from "@/public/bdsr_logo.ico"
 import tvsLogo from "@/public/tvs_logo.ico"
+import pharLogo from "@/public/phar-logo.png"
 
 import NavibotImg from "@/public/Navibot.png"
 import BrainImg from "@/public/BrainScanNet.png"
@@ -100,7 +101,7 @@ export const experiencesData = [
   {
     title: "Quantitative Researcher",
     location: "Pharvision Advisers | USA",
-    company_icon: qbLogo,
+    company_icon: pharLogo,
     bullets: [
       "Engineered multi-factor machine learning models processing over 15 million daily tick-level data points across global equities and macro datasets, utilizing point-in-time alignment to achieve Sharpe > 1.2 at low portfolio turnover.",
       "Orchestrated LLM-based multi-agent workflows using LangChain, MLflow, and W&B handling over 10,000 automated backtesting runs weekly across 50+ concurrent experiments, reducing model validation cycles from days to hours.",
