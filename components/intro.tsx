@@ -51,11 +51,16 @@ export default function Intro() {
     setLoading(true);
     setAnimatedText("");
 
+    const formattedHistory = messages.map((m) => ({
+      role: m.sender === "user" ? "user" : "assistant",
+      content: m.text,
+    }));
+
     try {
       const res = await fetch("https://naveen-chatbot-api.onrender.com/query", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ query: input, provider: provider }),
+        body: JSON.stringify({ query: input, provider: provider, history: formattedHistory }),
       });
 
       const data = await res.json();
