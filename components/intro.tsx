@@ -68,11 +68,12 @@ export default function Intro() {
 
       setLoading(false);
       let index = 0;
-      const chunkSize = 5;
+      const chunkSize = Math.max(12, Math.ceil(fullText.length / 40));
       const interval = setInterval(() => {
         setAnimatedText((prev) => {
-          const nextChunk = fullText.slice(index, index + chunkSize);
-          index += chunkSize;
+          const nextIndex = Math.min(index + chunkSize, fullText.length);
+          const nextChunk = fullText.slice(index, nextIndex);
+          index = nextIndex;
           if (containerRef.current) {
             containerRef.current.scrollTop = containerRef.current.scrollHeight;
           }
@@ -83,7 +84,7 @@ export default function Intro() {
           }
           return prev + nextChunk;
         });
-      }, 10);
+      }, 8);
     } catch (error) {
       setMessages((prev) => [
         ...prev,
