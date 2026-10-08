@@ -72,15 +72,15 @@ export default function Experience() {
               </p>
             </div>
 
-            {item.bullets ? (
+            {"bullets" in item && (item as any).bullets ? (
               <ul className="mt-3 text-sm leading-relaxed text-gray-700 dark:text-white/75 list-disc list-outside ml-4 space-y-1.5">
-                {item.bullets.map((bullet: string, bIdx: number) => (
+                {(item as any).bullets.map((bullet: string, bIdx: number) => (
                   <li key={bIdx}>{bullet}</li>
                 ))}
               </ul>
             ) : (
               <p className="mt-3 text-sm leading-relaxed text-gray-700 dark:text-white/75">
-                {item.description1}<br />{item.description2}
+                {(item as any).description1}<br />{(item as any).description2}
               </p>
             )}
           </VerticalTimelineElement>

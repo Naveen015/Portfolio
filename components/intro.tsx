@@ -251,11 +251,11 @@ export default function Intro() {
           <span className="opacity-70">Resume</span>
           <FaFile className="opacity-70" />
         </a>
-        <a className="group bg-gray-950 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-105 active:scale-105 transition border-2 border-white border-opacity-40" href="https://github.com/Naveen015", target="_blank", rel="noopener noreferrer">
+        <a className="group bg-gray-950 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-105 active:scale-105 transition border-2 border-white border-opacity-40" href="https://github.com/Naveen015" target="_blank" rel="noopener noreferrer">
           <span className="opacity-70">GitHub</span>
           <FaGithub className="opacity-70" />
         </a>
-        <a className="group bg-gray-950 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-105 transition border-2 border-white border-opacity-40" href="https://www.linkedin.com/in/naveen015/", target="_blank", rel="noopener noreferrer">
+        <a className="group bg-gray-950 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-105 transition border-2 border-white border-opacity-40" href="https://www.linkedin.com/in/naveen015/" target="_blank" rel="noopener noreferrer">
           <span className="opacity-70">LinkedIn</span>
           <BsLinkedin className="opacity-70" />
         </a>
