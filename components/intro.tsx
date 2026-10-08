@@ -68,10 +68,11 @@ export default function Intro() {
 
       setLoading(false);
       let index = 0;
+      const chunkSize = 5;
       const interval = setInterval(() => {
         setAnimatedText((prev) => {
-          const nextChar = fullText.charAt(index);
-          index++;
+          const nextChunk = fullText.slice(index, index + chunkSize);
+          index += chunkSize;
           if (containerRef.current) {
             containerRef.current.scrollTop = containerRef.current.scrollHeight;
           }
@@ -80,9 +81,9 @@ export default function Intro() {
             setMessages((prev) => [...prev, { sender: "bot", text: fullText }]);
             setAnimatedText("");
           }
-          return prev + nextChar;
+          return prev + nextChunk;
         });
-      }, 15);
+      }, 10);
     } catch (error) {
       setMessages((prev) => [
         ...prev,
