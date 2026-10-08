@@ -78,49 +78,66 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Web Developer",
-    location: "Kahana Inc",
+    title: "Quantitative Researcher",
+    location: "Pharvision Advisers | USA",
+    company_icon: qbLogo,
+    bullets: [
+      "Engineered multi-factor machine learning models processing over 15 million daily tick-level data points across global equities and macro datasets, utilizing point-in-time alignment to achieve Sharpe > 1.2 at low portfolio turnover.",
+      "Orchestrated LLM-based multi-agent workflows using LangChain, MLflow, and W&B handling over 10,000 automated backtesting runs weekly across 50+ concurrent experiments, reducing model validation cycles from days to hours.",
+      "Developed an agentic production RAG system serving live financial research, combining Neo4j GraphRAG (multi-hop traversal) and dense vector search (FAISS) with cross-encoder reranking to process complex queries across 500GB+ of documentation.",
+      "Integrated a RAG evaluation framework utilizing LLM as a judge to benchmark response faithfulness, context relevance & retrieval accuracy.",
+      "Established scalable data pipelines with Polars, Airflow, and Delta Lake ingesting 10+ vendor feeds concurrently (handling 50M+ rows daily) to expand quantitative research coverage without latency degradation."
+    ],
+    icon: React.createElement(CgWorkAlt),
+    date: "Jan 2026 – Present",
+  },
+  {
+    title: "AI Engineer",
+    location: "Kahana Group Inc | USA",
     company_icon: kahanaLogo,
-    description1: "• Proposed advanced features & coordinated with cross-functional teams to design & implement UI/UX using React JS",
-    description2: "• Integrated analytics tool & initiated data-driven upgrades to meet user demands: Increased User Retention rate by 4%",
+    bullets: [
+      "Programmed production-ready LLM execution flows using Azure AI Foundry and Azure AI Services for an AI-native browser, orchestrating robust state transitions and prompt workflows to elevate reliability across complex multi-step user tasks.",
+      "Architected an Azure-backed persistence layer using Azure Blob Storage scaling to manage browser state, sessions, bookmarks, and tabs with sub-50ms sync overhead under heavy state transitions.",
+      "Instrumented real-time AI observability telemetry with Azure Monitor Application Insights, tracking token metering and usage analytics across stress tests simulating 5M+ monthly LLM throughput and trim cloud cost overhead.",
+      "Established automated evaluation harnesses using the Azure AI Evaluation SDK to analyze user interactions, model responses, and failure patterns at scale, boosting prompt optimization effectiveness and completion metrics."
+    ],
     icon: React.createElement(CgWorkAlt),
-    date: "September 2023 - Jan 2024",
+    date: "Jul 2025 – Jan 2026",
   },
   {
-    title: "Software Engineer  - Full-time",
-    location: "Quantitative Brokers",
+    title: "Software Engineer (ML Systems)",
+    location: "Quantitative Brokers | India",
     company_icon: qbLogo,
-    description1: "• Developed an internal application facilitating the seamless creation & transmission of Financial Information Exchange (FIX) protocol messages, automating and streamlining the order messaging process and enhancing trading operations",
-    description2: "• Spearheaded the enhancement of the FIX messaging tool by integrating functionalities for complex Multi-Leg orders, driving a 15% operational efficiency improvement and enabling sophisticated trading strategies and faster execution",
+    bullets: [
+      "Built low-latency C++/Python inference runtimes and event-driven messaging pipelines executing predictive models with sub-millisecond dispatch (< 800µs) over high-throughput FIX protocol sessions processing millions of daily messages.",
+      "Integrated real-time feature streaming and state tracking for multi-leg execution strategies, dynamically processing live Level-2 order book feeds across 40+ asset pairs to minimize market execution slippage under peak institutional loads.",
+      "Engineered high-throughput PostgreSQL and Kafka telemetry pipelines capturing over 10GB of streaming fills and model predictions daily, eliminating data leakage and accelerating offline feature engineering by 3.5x.",
+      "Extended the core FIX messaging platform and backend services with multi-leg trade support, optimizing low-level data-access layers to handle heavy-load financial traffic spikes seamlessly."
+    ],
     icon: React.createElement(CgWorkAlt),
-    date: "July 2022 - June 2023",
+    date: "Jul 2022 – Feb 2023",
   },
   {
-    title: "Software Engineer - Intern",
-    location: "Quantitative Brokers",
-    company_icon: qbLogo,
-    description1: "• Led the strategic integration of SonarQube & BlackDuck into Jenkins pipeline, reducing critical vulnerabilities by 20%",
-    description2: "• Designed a robust VueJS Web-app, significantly improving database performance through decentralized PostgreSQL",
-    icon: React.createElement(CgWorkAlt),
-    date: "May 2021 - July 2021",
-  },
-  {
-    title: "Big Data Engineer - Intern",
-    location: "Big Data Science Research",
+    title: "Data Scientist Intern",
+    location: "Big Data Science Research | Bangalore, India",
     company_icon: bdsrLogo,
-    description1: "• Automated the extraction of Google Maps data, elevating OpenStreetMap visualization using data overlay techniques",
-    description2: "• Devised a proprietary map-matching algorithm to accurately model urban traffic flow, aiding in efficient city planning",
-      icon: React.createElement(CgWorkAlt),
-    date: "April 2020 - June 2020",
+    bullets: [
+      "Developed and deployed a machine learning pipeline using Python and scikit-learn to predict urban traffic patterns, enhancing model accuracy by 15% through the integration of geospatial data features.",
+      "Implemented a novel map-matching algorithm to refine GPS data, significantly improving the precision of traffic flow models by 20%."
+    ],
+    icon: React.createElement(CgWorkAlt),
+    date: "Apr 2021 – Jun 2022",
   },
   {
     title: "Machine Learning Engineer - Intern",
     location: "Alphabt & TVS Motors Ltd",
     company_icon: tvsLogo,
-    description1: "• Implemented a program to scan & verify vehicle labels using openCV, boosting validation performance system by 3%",
-    description2: "• Devised a custom TensorFlow-based object detection model, achieving an 99% accuracy in text engraving recognition",
+    bullets: [
+      "Implemented a program to scan & verify vehicle labels using OpenCV, boosting validation performance system by 3%.",
+      "Devised a custom TensorFlow-based object detection model, achieving 99% accuracy in text engraving recognition."
+    ],
     icon: React.createElement(CgWorkAlt),
-    date: "May 2019 - July 2019",
+    date: "May 2019 – July 2019",
   },
 ] as const;
 
